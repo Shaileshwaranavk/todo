@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced To-Do List ✅</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>My Advanced To-Do List ✅</h1>
+      <p>Stay organized and never miss a task!</p>
+    </header>
+
+    <!-- ADD TASK FORM -->
+    <section class="add-task">
+      <input type="text" id="task-input" placeholder="Task description">
+      <input type="date" id="task-date">
+      <input type="time" id="task-time">
+      <input type="text" id="task-person" placeholder="Assign to...">
+      <select id="task-priority">
+        <option value="Medium" selected>Priority: Medium</option>
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="add-btn">Add Task</button>
+    </section>
+
+    <!-- FILTER / SORT SECTION -->
+    <section class="filter-sort">
+      <select id="filter-priority">
+        <option value="All">Filter: All Priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <select id="filter-person">
+        <option value="All">Filter: All Persons</option>
+      </select>
+      <select id="sort-tasks">
+        <option value="default">Sort: Default</option>
+        <option value="date">By Due Date</option>
+        <option value="priority">By Priority</option>
+      </select>
+    </section>
+
+    <!-- TASK LIST -->
+    <section class="task-list-section">
+      <ul id="task-list">
+        <!-- Tasks will render here -->
+      </ul>
+      <div class="task-counter">
+        <span id="tasks-remaining">0</span> task(s) remaining
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
